@@ -1,0 +1,45 @@
+.newItem {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.newsItem:hover {
+  transform: scale(1.02);
+}
+
+.newsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.newsRating {
+  font-size: 1rem;
+  color: #ff9800;
+}
+
+.newsMeta {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.newsAuthor,
+.newsDate {
+  margin-right: 15px;
+}
+
+.newsContent {
+  margin-top: 10px;
+  color: #555;
+}
