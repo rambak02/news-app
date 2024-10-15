@@ -1,15 +1,16 @@
 .newsDetail {
+  font-family: "Arial", sans-serif;
+  max-width: 800px;
+  margin: 50px auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; 
-  padding: 20px;
-  margin: auto;
-  border-radius: 10px;
-  min-height: 100vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .newsHeader {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .newsTitle {
@@ -18,14 +19,16 @@
 }
 
 .newsTitle a {
+  color: #333333;
   text-decoration: none;
-  color: inherit;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .newsMeta {
-  margin-top: 10px;
-  font-size: smaller;
-  color: #555;
+    color: #666666;
+    font-size: 0.9em;
+    margin-top: 10px;
 }
 
 .newsAuthor,
@@ -34,8 +37,9 @@
 }
 
 .newsRating {
-  margin: 20px 0;
-  font-weight: bold;
+    margin-bottom: 20px;
+    color: #444444;
+    font-weight: bold;
 }
 
 .commentsSection {
@@ -57,7 +61,6 @@
   background-color: rgb(29, 28, 28);
 }
 
-/* Стили для кнопки обновления комментариев */
 .refreshButton {
   background: rgb(52, 49, 49);
   color: white;
@@ -66,7 +69,6 @@
   border: none;
   cursor: pointer;
   font-size: medium;
-  
 }
 
 .refreshButton:hover {
