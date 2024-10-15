@@ -1,14 +1,8 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { NewsList } from "./components/NewsList";
+import { AppRoutes } from "./routes";
 
 function App() {
-  return (
-    <div className="container">
-      <Header />
-      <NewsList />
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;

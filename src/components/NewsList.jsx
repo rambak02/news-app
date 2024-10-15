@@ -1,5 +1,5 @@
 import "../styles/NewsList.css";
-import { NewItem } from "./NewItem";
+import { NewItem } from "./NewsItem";
 import { observer } from "mobx-react";
 import store from "../stores/newsStore";
 
