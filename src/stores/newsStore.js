@@ -41,6 +41,7 @@ class NewsStore {
 
   refreshStories() {
     this.fetchStories();
+    this.loading = true;
   }
 }
 

@@ -5,10 +5,12 @@ import "./MainPage.css";
 
 export function MainPage() {
   return (
-    <div className="container">
-      <Header />
-      <NewsList />
+    <>
+      <div className="container">
+        <Header />
+        <NewsList />
+      </div>
       <ButtonRefresh />
-    </div>
+    </>
   );
 }

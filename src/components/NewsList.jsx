@@ -4,11 +4,10 @@ import { observer } from "mobx-react";
 import store from "../stores/newsStore";
 
 export const NewsList = observer(() => {
-  if (store.loading) {
-    return <div>Загрузка...</div>;
-  }
 
-  return (
+  return store.loading ? (
+    <div className="loader"></div>
+  ) : (
     <ul className="newsList">
       {store.stories.map((story) => (
         <NewItem key={story.id} story={story} />
