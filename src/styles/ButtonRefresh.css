@@ -1,0 +1,20 @@
+.buttonRefresh {
+    background: rgb(52, 49, 49);
+    color: white;
+    width: 127px;
+    height: 42px;
+    border-radius: 46px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: medium;
+    cursor: pointer;
+    right: 46%;
+    position: fixed;
+    bottom: 20px;
+    border: none;
+}
+
+.buttonRefresh:hover {
+    background: rgb(29, 28, 28);
+}
