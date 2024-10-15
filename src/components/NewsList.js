@@ -1,12 +1,18 @@
 import "../styles/NewsList.css";
 import { NewItem } from "./NewItem";
+import { observer } from "mobx-react";
+import store from "../stores/newsStore";
 
-export function NewsList() {
+export const NewsList = observer(() => {
+  if (store.loading) {
+    return <div>Загрузка...</div>;
+  }
+
   return (
     <ul className="newsList">
-      {Array.from({ length: 2 }).map((__, index) => (
-        <NewItem key={index} number={index} />
+      {store.stories.map((story) => (
+        <NewItem key={story.id} story={story} />
       ))}
     </ul>
   );
-}
+});

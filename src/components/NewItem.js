@@ -1,16 +1,17 @@
+import { formatUnixDate } from "../helpers/formatter";
 import "../styles/NewItem.css";
-export function NewItem({ number }) {
+export const NewItem = ({ story }) => {
   return (
     <li className="newItem">
       <div className="newsHeader">
-        <h2 className="newsTitle">Название новости {number + 1}</h2>
-        <span className="newsRating">Рейтинг: 4.{number + 1}</span>
+        <h2 className="newsTitle"> {story.title}</h2>
+        <span className="newsRating">Рейтинг: {story.score}</span>
       </div>
       <div className="newsMeta">
-        <span className="newsAuthor">Автор: Ник автора</span>
-        <span className="newsDate">Дата публикации: 01.01.2023</span>
+        <span className="newsAuthor">Автор: {story.by}</span>
+        <span className="newsDate">Дата публикации: {formatUnixDate(story.time)}
+        </span>
       </div>
-      <p className="newsContent">Краткое содержание новости...</p>
     </li>
   );
-}
+};

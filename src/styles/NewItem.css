@@ -7,7 +7,7 @@
   transition: transform 0.2s;
 }
 
-.newsItem:hover {
+.newItem:hover {
   transform: scale(1.02);
 }
 
@@ -26,6 +26,7 @@
 .newsRating {
   font-size: 1rem;
   color: #ff9800;
+  white-space: nowrap;
 }
 
 .newsMeta {
@@ -37,9 +38,4 @@
 .newsAuthor,
 .newsDate {
   margin-right: 15px;
-}
-
-.newsContent {
-  margin-top: 10px;
-  color: #555;
 }
