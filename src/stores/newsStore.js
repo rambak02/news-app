@@ -7,6 +7,13 @@ class NewsStore {
   constructor() {
     makeAutoObservable(this);
     this.fetchStories();
+    this.startAutoRefresh();
+  }
+
+  startAutoRefresh() {
+    setInterval(() => {
+      this.fetchStories();
+    }, 60000);
   }
 
   async fetchStories() {
@@ -15,7 +22,7 @@ class NewsStore {
         "https://hacker-news.firebaseio.com/v0/newstories.json"
       );
       const storyIds = await response.json();
-     
+
       const storyPromises = storyIds
         .slice(0, 100)
         .map((id) =>
@@ -30,6 +37,10 @@ class NewsStore {
     } finally {
       this.loading = false;
     }
+  }
+
+  refreshStories() {
+    this.fetchStories();
   }
 }
 
