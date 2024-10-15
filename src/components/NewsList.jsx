@@ -4,7 +4,6 @@ import { observer } from "mobx-react";
 import store from "../stores/newsStore";
 
 export const NewsList = observer(() => {
-
   return store.loading ? (
     <div className="loader"></div>
   ) : (

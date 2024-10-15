@@ -1,0 +1,96 @@
+.newsDetail {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; 
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
+.newsHeader {
+  margin-bottom: 20px;
+}
+
+.newsTitle {
+  font-size: 24px;
+  color: #333;
+}
+
+.newsTitle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsMeta {
+  margin-top: 10px;
+  font-size: smaller;
+  color: #555;
+}
+
+.newsAuthor,
+.newsDate {
+  margin-right: 15px;
+}
+
+.newsRating {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.commentsSection {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: rgb(52, 49, 49);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.backButton:hover {
+  background-color: rgb(29, 28, 28);
+}
+
+/* Стили для кнопки обновления комментариев */
+.refreshButton {
+  background: rgb(52, 49, 49);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+  
+}
+
+.refreshButton:hover {
+  background: rgb(29, 28, 28);
+}
+
+.buttonRefresh {
+  background: rgb(52, 49, 49);
+  color: white;
+  width: 127px;
+  height: 42px;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  bottom: 20px;
+  border: none;
+}
+
+.buttonRefresh:hover {
+  background: rgb(29, 28, 28);
+}
