@@ -7,7 +7,9 @@ export const CommentItem = observer(({ comment }) => {
 
   const handleClick = async () => {
     if (!showChildren) {
-      await store.fetchChildComments(comment.kids);
+      if (comment.kids) {
+        await store.fetchChildComments(comment.kids);
+      }
     }
     setShowChildren(!showChildren);
   };
@@ -20,7 +22,7 @@ export const CommentItem = observer(({ comment }) => {
           dangerouslySetInnerHTML={{ __html: comment.text }}
         ></div>
       </div>
-      {showChildren && (
+      {showChildren && store.childComments > 0 && (
         <ul className="childCommentList">
           {store.childComments.map((ch) => (
             <CommentItem key={ch.id} comment={ch} />
